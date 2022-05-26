@@ -25,7 +25,7 @@ Then you just have to run this command to install dependencies:
 npm i
 ```
 
-Once installation finishes just run the above command to run project:
+Once installation finishes just run the bellow command to run project:
 ```
 npm start
 ```

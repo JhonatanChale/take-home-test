@@ -15,11 +15,6 @@ Once the project gets clonned you should cd into the project:
 cd take-home-test
 ```
 
-There you'll need to create an .env file that should look like this:
-```
-GITHUBTOKEN=YOUR_PERSONAL_ACCESS_TOKEN
-```
-
 Then you just have to run this command to install dependencies:
 ```
 npm i

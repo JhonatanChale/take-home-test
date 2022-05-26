@@ -24,7 +24,7 @@ export class AppController {
     try{
       //Auth octokit
       const octokit = new Octokit({
-        auth: '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'
+        auth: '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'
       })
 
       //Request to commits

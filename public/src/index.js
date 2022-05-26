@@ -14,7 +14,16 @@ const commitsTable = async () => {
             type: 'post',
             //Controller
             url: location.protocol + '//' + location.hostname + (location.port ? ":" + location.port : "")+"/",
-            crossDomain: true
+            crossDomain: true,
+            dataSrc: function (json) {
+                //Make your callback here.
+                if (json.errno == 500) {
+                    alert("Authentication failed")
+                }
+                else {
+                    return json.data;
+                }
+            }
         }
     })
 }

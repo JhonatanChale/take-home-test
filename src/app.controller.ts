@@ -24,14 +24,14 @@ export class AppController {
     try{
       //Auth octokit
       const octokit = new Octokit({
-        auth: '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'
+        auth: process.env.GITHUBTOKEN //Env file
       })
 
       //Request to commits
       let response = await octokit.request('GET /repos/{owner}/{repo}/commits', {
         owner: 'JhonatanChale', //Me
         repo: 'take-home-test'  //Repository for this project
-      })
+      });
 
       //Filter to get only data to display
       let filteredResponse = new Array();
